@@ -1,0 +1,173 @@
+@font-face           {
+    font-family: "ComfortaaRegular";
+    src: url("../fonts/ComfortaaRegular.eot");
+    src: url("../fonts/ComfortaaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ComfortaaRegular.woff") format("woff"),
+    url("../fonts/ComfortaaRegular.ttf") format("truetype");
+    font-weight: bold;
+}
+
+.chartContainer {
+    position:absolute;
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chartContainer>div:nth-child(1) {
+    font-size: 30px;
+    font-family: "ComfortaaRegular";
+    color: #840024;
+    z-index: 101;
+}
+.chartContainer>div:nth-child(2) {
+   height:100%;
+   width:80%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.foot {
+    background: transparent;
+    position: absolute;
+    width:100%;
+    height: 100%;
+
+
+}
+button {
+  position: relative;
+  border-radius: 10px;
+  width:100px;
+  height: 50px;
+  background:powderblue;
+  color:white;
+  border:1px solid transparent;
+}
+.filterButton {
+    position: relative;
+    border-radius: 10px;
+    width:100px;
+    height: 50px;
+    background:powderblue;
+    color:white;
+    border:1px solid transparent;
+}
+.filterButtonAct {
+    position: relative;
+    border-radius: 10px;
+    width:100px;
+    height: 50px;
+    background: #99b5e6;
+    color:white;
+    border:1px solid transparent;
+}
+
+button:hover {
+  cursor:pointer;
+  color:white;
+  border:1px solid white;
+}
+.sizesLength {
+  position: relative;
+  background: transparent;
+  width:50px;
+   display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: space-around;
+  height: 100%;
+
+}
+.sizesLength >div{
+ height: 25px;
+ margin: 6px;
+ background: #ffabcf;
+ color: white;
+ border:1px solid #5a9cae;
+ border-radius: 3px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.sizesLengthNone {
+ visibility: hidden;
+}
+.sizesWide {
+ position:relative;
+ display: flex;
+ justify-content: space-between;
+ background: #840024;
+ width: 80%;
+ height: 50px;
+}
+.sizesWide >div{
+    height: 25px;
+    margin: 5px;
+    background: white;
+    color: #5a9cae;
+    border:1px solid #5a9cae;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chartSizesWide {
+   position: relative;
+   background: rgba(135, 197, 255, 0.2);
+   /*z-index: 100;*/
+   width:100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+.chartSizesWideNone {
+    @extends .chartSizesWide;
+    visibility: hidden;
+    display: block;
+}
+.chartSizesWide >div {
+  position: relative;
+  width:100%;
+  background: yellowgreen;
+  height: 30px;
+  display: flex;
+  margin-bottom:10px;
+  opacity: 0.3;
+}
+.chartSizesWide >div>div {
+    position: relative;
+    width:30px;
+    background: #84e4ff;
+    height: 30px;
+    display: flex;
+    margin-right:10px;
+    color: #719726;
+    justify-content: center;
+    align-items: center;
+
+}
+.chartSizesCont {
+    position: relative;
+    width:400px;
+    height: 100%;
+
+}
+.prevNextDiv {
+   display: flex;
+   flex-direction: column;
+   height: 120px;
+   justify-content: space-between;
+}
+.filterButtons {
+   margin-top:10px;
+   width: 210px;
+   display: flex;
+   justify-content: space-between;
+}

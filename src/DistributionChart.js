@@ -16,7 +16,7 @@ export default class DistributionChart extends Component
                      }
                      }
     getData(nextPage)
-    {
+                     {
         let headers = new Headers();
         let url = 'https://homeexercise.volumental.com/sizingsample';
         url = nextPage?`https://homeexercise.volumental.com/sizingsample?page=${nextPage}`:url;
@@ -66,7 +66,7 @@ export default class DistributionChart extends Component
 
     componentDidMount() {
         this.getData();
-    }
+                        }
 
     render ()   {
         //const Fragment = React.Fragment;
@@ -88,18 +88,18 @@ export default class DistributionChart extends Component
                      </div>
                      <div className="prevNextDiv">
                          <button onClick={e=>this.getData(this.state.link)}>Next >></button>
-                     {this.state.prev&&this.state.prev.link?
+                         {this.state.prev&&this.state.prev.link?
                          <button onClick={e=>this.setState(this.state.prev)}>&#060;&#060; Prev</button>
                          :null}
                      </div>
                  </div>
-                <div className="filterButtons">
-                <button className={this.state.filter.onlyWide?"filterButtonAct":"filterButton"}
-                        onClick={e=>this.setState({filter:{onlyWide:!this.state.filter.onlyWide}})}>Only Wide</button>
-                <button className={this.state.filter.onlyLength?"filterButtonAct":"filterButton"}
-                        onClick={e=>this.setState({filter:{onlyLength:!this.state.filter.onlyLength}})}>Only Width</button>
+                <div     className="filterButtons">
+                <button  className={this.state.filter.onlyWide?"filterButtonAct":"filterButton"}
+                         onClick={e=>this.setState({filter:{onlyWide:!this.state.filter.onlyWide}})}>Only Wide</button>
+                <button  className={this.state.filter.onlyLength?"filterButtonAct":"filterButton"}
+                         onClick={e=>this.setState({filter:{onlyLength:!this.state.filter.onlyLength}})}>Only Width</button>
                 </div>
-                 </div>
+                </div>
                 )
                 }
 }
